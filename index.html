@@ -1,30 +1,20 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>MTInstagram_V26</title>
-
-  <link rel="icon" href="https://instagold.download/favicon.ico" type="image/x-icon" />
+  <title>MTInstagram_V26</title>  <link rel="icon" href="https://instagold.download/favicon.ico" type="image/x-icon" />
   <meta name="robots" content="index,follow" />
   <meta name="description" content="انستقرام MT الذهبي هو نسخة محسنة من تطبيق انستغرام مع واجهة ذهبية وميزات فريدة مثل تنزيل الصور والفيديوهات والمزيد." />
   <meta name="keywords" content="انستقرام MT الذهبي, MTInsta, نسخة انستغرام معدلة" />
-  <meta name="theme-color" content="#833AB4" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <meta name="theme-color" content="#833AB4" />  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9QVCM3KLR"></script>
-  <script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9QVCM3KLR"></script>  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-L9QVCM3KLR');
-  </script>
-
-  <style>
+  </script>  <style>
     :root {
       --gold: #FDB827;
       --gold-2: #F58529;
@@ -106,14 +96,26 @@
       backdrop-filter: blur(18px);
     }
 
-    .loader-logo {
-      width: 74px;
-      height: 74px;
-      margin: 0 auto 14px;
-      border-radius: 20px;
-      box-shadow: 0 12px 30px rgba(253,184,39,.35);
-      animation: floatLogo 1.4s ease-in-out infinite;
-    }
+.loader-logo-wrap {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background: #fff;
+  border: 2px solid rgba(253,184,39,.45);
+  box-shadow: 0 14px 34px rgba(253,184,39,.35);
+  animation: floatLogo 1.4s ease-in-out infinite;
+}
+
+.loader-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 16px;
+}
 
     .loader-text {
       font-size: 18px;
@@ -688,240 +690,244 @@
         scroll-behavior: auto !important;
       }
     }
-  </style>
-</head>
+  </style></head>
 <body>
   <div id="loader" aria-label="Loading">
-    <div class="loader-content">
-      <img src="https://instagold.download/favicon.ico" alt="انستقرام MT الذهبي" class="loader-logo" />
-      <div class="loader-text" data-lang="ar">جاري تحميل الصفحة...</div>
-      <div class="loader-text" data-lang="en">Loading page...</div>
-      <div class="loader-progress"><div class="loader-progress-bar" id="loaderBar"></div></div>
-    </div>
-  </div>
+  <div class="loader-content">
 
-  <div class="top-bar">
+    <div class="loader-logo-wrap">
+      <img
+        src="https://instagold.download/favicon.ico"
+        onerror="this.src='app_icon.png'"
+        alt="انستقرام MT الذهبي"
+        class="loader-logo"
+      />
+    </div>
+
+    <div class="loader-text" data-lang="ar">
+      جاري تحميل الصفحة...
+    </div>
+
+    <div class="loader-text" data-lang="en">
+      Loading page...
+    </div>
+
+    <div class="loader-progress">
+      <div class="loader-progress-bar" id="loaderBar"></div>
+    </div>
+
+  </div>
+</div>
+  </div>  <div class="top-bar">
     <a href="#" class="logo" aria-label="MTInstagram">
       <i class="fab fa-instagram logo-icon"></i>
       <span data-lang="ar">انستقرام أم تي الذهبي</span>
       <span data-lang="en">MTInstagram</span>
-    </a>
+    </a><div class="controls">
+  <button class="btn-control" type="button" onclick="toggleLang()" aria-label="Change language">
+    <span id="langLabel">EN</span>
+    <i class="fas fa-globe"></i>
+  </button>
+</div>
 
-    <div class="controls">
-      <button class="btn-control" type="button" onclick="toggleLang()" aria-label="Change language">
-        <span id="langLabel">EN</span>
-        <i class="fas fa-globe"></i>
-      </button>
-    </div>
-  </div>
-
-  <header class="hero">
+  </div>  <header class="hero">
     <div class="hero-content">
       <div class="hero-kicker">
         <i class="fas fa-crown"></i>
         <span data-lang="ar">نسخة ذهبية بتجربة فاخرة</span>
         <span data-lang="en">Golden Edition with Premium Feel</span>
-      </div>
+      </div><h1 data-lang="ar">انستقرام MT الذهبي - النسخة المميزة</h1>
+  <h1 data-lang="en">MTInsta - Premium Edition</h1>
 
-      <h1 data-lang="ar">انستقرام MT الذهبي - النسخة المميزة</h1>
-      <h1 data-lang="en">MTInsta - Premium Edition</h1>
+  <p class="subtitle" data-lang="ar">انستقرام MT الذهبي هو نسخة محسنة من تطبيق انستغرام مع واجهة ذهبية وميزات فريدة مثل تنزيل الصور والفيديوهات والمزيد.</p>
+  <p class="subtitle" data-lang="en">A stylish glass interface, luxury golden colors, and a smooth fast download experience.</p>
 
-      <p class="subtitle" data-lang="ar">واجهة زجاجية جذابة، ألوان ذهبية فاخرة، وتجربة تحميل سلسة وسريعة لهاتفك.</p>
-      <p class="subtitle" data-lang="en">A stylish glass interface, luxury golden colors, and a smooth fast download experience.</p>
+  <div class="version-badge"><i class="fas fa-bolt"></i> v26</div>
+</div>
 
-      <div class="version-badge"><i class="fas fa-bolt"></i> v26</div>
-    </div>
-  </header>
-
-  <main class="main-content">
+  </header>  <main class="main-content">
     <div class="content-grid">
       <section class="app-card glass">
         <div class="app-logo-container">
           <div class="app-logo-bg"></div>
           <img src="instaplus.png" alt="انستقرام MT الذهبي" class="app-logo" loading="eager" />
-        </div>
+        </div><h2 class="app-title" data-lang="ar">انستقرام MT الذهبي</h2>
+    <h2 class="app-title" data-lang="en">MTInsta</h2>
 
-        <h2 class="app-title" data-lang="ar">انستقرام MT الذهبي</h2>
-        <h2 class="app-title" data-lang="en">MTInsta</h2>
+    <p class="app-description" data-lang="ar">النسخة الذهبية المحسنة من انستغرام مع واجهة فاخرة وميزات متقدمة.</p>
+    <p class="app-description" data-lang="en">The enhanced golden version of Instagram with a premium interface and advanced features.</p>
 
-        <p class="app-description" data-lang="ar">النسخة الذهبية المحسنة من انستغرام مع واجهة فاخرة وميزات متقدمة.</p>
-        <p class="app-description" data-lang="en">The enhanced golden version of Instagram with a premium interface and advanced features.</p>
-
-        <div class="app-meta">
-          <div class="meta-item">
-            <div class="meta-icon"><i class="fas fa-download"></i></div>
-            <div class="meta-value">141MB</div>
-            <div class="meta-label" data-lang="ar">حجم الملف</div>
-            <div class="meta-label" data-lang="en">File Size</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-icon"><i class="fas fa-sync-alt"></i></div>
-            <div class="meta-value">v26</div>
-            <div class="meta-label" data-lang="ar">الإصدار</div>
-            <div class="meta-label" data-lang="en">Version</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-icon"><i class="fas fa-check-circle"></i></div>
-            <div class="meta-value" data-lang="ar">آمن</div>
-            <div class="meta-value" data-lang="en">Safe</div>
-            <div class="meta-label" data-lang="ar">بدون فيروسات</div>
-            <div class="meta-label" data-lang="en">Virus Free</div>
-          </div>
-        </div>
-
-        <div class="download-box">
-          <a href="javascript:void(0);" onclick="startCountdown()" id="fileInfoBox" class="file-box">
-            <img src="app_icon.png" alt="MTInstagram icon" loading="lazy" />
-            <div class="text">
-              <div class="title">MTInstagram_V26</div>
-              <div class="size" data-lang="ar">اضغط للتحميل الآن</div>
-              <div class="size" data-lang="en">Tap to download now</div>
-            </div>
-            <i class="fas fa-arrow-down download-icon"></i>
-          </a>
-
-          <div id="countdownBox" class="countdown-box"></div>
-
-          <div id="finalDownloadBox" style="display:none;">
-            <a href="https://pub-fcc4c650de6544149a3552e96291577e.r2.dev/MTInsta/MTInstagram_V26.apk" class="download-btn">
-              <i class="fas fa-download"></i>
-              <span data-lang="ar">تنزيل الآن</span>
-              <span data-lang="en">Download Now</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="install-notice">
-          <h4><i class="fas fa-info-circle"></i> <span data-lang="ar">ملاحظة هامة:</span><span data-lang="en">Important Note:</span></h4>
-          <p data-lang="ar">• يجب تفعيل "مصادر غير معروفة" في إعدادات الهاتف قبل التثبيت</p>
-          <p data-lang="en">• Enable "Unknown Sources" in phone settings before installation</p>
-          <p data-lang="ar">• النسخة متوافقة مع أندرويد 9.0 فما فوق ومعالج arm64</p>
-          <p data-lang="en">• Compatible with Android 9.0 and above, and supports ARM64 processors</p>
-        </div>
-      </section>
-
-      <section class="features-card glass">
-        <h2 class="section-title" data-lang="ar">الميزات الحصرية</h2>
-        <h2 class="section-title" data-lang="en">Exclusive Features</h2>
-
-        <div class="features-grid">
-          <div class="feature-item">
-            <div class="feature-icon"><i class="fas fa-download"></i></div>
-            <div class="feature-content">
-              <h3 class="feature-title" data-lang="ar">تنزيل الصور والفيديوهات</h3>
-              <h3 class="feature-title" data-lang="en">Download Photos & Videos</h3>
-              <p class="feature-desc" data-lang="ar">حفظ الصور والفيديوهات من المنشورات والقصص بجودة عالية</p>
-              <p class="feature-desc" data-lang="en">Save photos and videos from posts and stories in high quality</p>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-icon"><i class="fas fa-eye"></i></div>
-            <div class="feature-content">
-              <h3 class="feature-title" data-lang="ar">قصص دون معرفة</h3>
-              <h3 class="feature-title" data-lang="en">View Stories Anonymously</h3>
-              <p class="feature-desc" data-lang="ar">مشاهدة قصص الآخرين دون أن يعرفوا أنك شاهدتها</p>
-              <p class="feature-desc" data-lang="en">View others' stories without them knowing you watched</p>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-icon"><i class="fas fa-ad"></i></div>
-            <div class="feature-content">
-              <h3 class="feature-title" data-lang="ar">إزالة الإعلانات</h3>
-              <h3 class="feature-title" data-lang="en">Remove Ads</h3>
-              <p class="feature-desc" data-lang="ar">تصفح انستغرام بدون إعلانات مزعجة</p>
-              <p class="feature-desc" data-lang="en">Browse Instagram without annoying ads</p>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-icon"><i class="fas fa-copy"></i></div>
-            <div class="feature-content">
-              <h3 class="feature-title" data-lang="ar">نسخ النصوص</h3>
-              <h3 class="feature-title" data-lang="en">Copy Texts</h3>
-              <p class="feature-desc" data-lang="ar">نسخ نصوص التعليقات والوصف بسهولة</p>
-              <p class="feature-desc" data-lang="en">Easily copy texts from comments and descriptions</p>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-icon"><i class="fas fa-palette"></i></div>
-            <div class="feature-content">
-              <h3 class="feature-title" data-lang="ar">واجهة ذهبية</h3>
-              <h3 class="feature-title" data-lang="en">Golden Interface</h3>
-              <p class="feature-desc" data-lang="ar">واجهة ذهبية فاخرة مع تدرجات أنيقة</p>
-              <p class="feature-desc" data-lang="en">Luxurious golden interface with elegant gradients</p>
-            </div>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-icon"><i class="fas fa-magnifying-glass-plus"></i></div>
-            <div class="feature-content">
-              <h3 class="feature-title" data-lang="ar">تكبير الصور</h3>
-              <h3 class="feature-title" data-lang="en">Zoom Photos</h3>
-              <p class="feature-desc" data-lang="ar">تكبير الصور في المنشورات والقصص للرؤية الأفضل</p>
-              <p class="feature-desc" data-lang="en">Zoom photos in posts and stories for better viewing</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="more-features">
-          <h3 data-lang="ar">+15 ميزة أخرى</h3>
-          <h3 data-lang="en">+15 More Features</h3>
-          <div class="chips">
-            <span class="chip" data-lang="ar">تنزيل القصص</span>
-            <span class="chip" data-lang="ar">إخفاء النشاط</span>
-            <span class="chip" data-lang="ar">نسخ الروابط</span>
-            <span class="chip" data-lang="ar">حفظ الريلز</span>
-            <span class="chip" data-lang="en">Download Stories</span>
-            <span class="chip" data-lang="en">Hide Activity</span>
-            <span class="chip" data-lang="en">Copy Links</span>
-            <span class="chip" data-lang="en">Save Reels</span>
-          </div>
-        </div>
-      </section>
+    <div class="app-meta">
+      <div class="meta-item">
+        <div class="meta-icon"><i class="fas fa-download"></i></div>
+        <div class="meta-value">141MB</div>
+        <div class="meta-label" data-lang="ar">حجم الملف</div>
+        <div class="meta-label" data-lang="en">File Size</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-icon"><i class="fas fa-sync-alt"></i></div>
+        <div class="meta-value">v26</div>
+        <div class="meta-label" data-lang="ar">الإصدار</div>
+        <div class="meta-label" data-lang="en">Version</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="meta-value" data-lang="ar">آمن</div>
+        <div class="meta-value" data-lang="en">Safe</div>
+        <div class="meta-label" data-lang="ar">بدون فيروسات</div>
+        <div class="meta-label" data-lang="en">Virus Free</div>
+      </div>
     </div>
-  </main>
 
-  <footer class="footer">
+    <div class="download-box">
+      <a href="javascript:void(0);" onclick="startCountdown()" id="fileInfoBox" class="file-box">
+        <img src="app_icon.png" alt="MTInstagram icon" loading="lazy" />
+        <div class="text">
+          <div class="title">MTInstagram_V26</div>
+          <div class="size" data-lang="ar">اضغط للتحميل الآن</div>
+          <div class="size" data-lang="en">Tap to download now</div>
+        </div>
+        <i class="fas fa-arrow-down download-icon"></i>
+      </a>
+
+      <div id="countdownBox" class="countdown-box"></div>
+
+      <div id="finalDownloadBox" style="display:none;">
+        <a href="https://pub-fcc4c650de6544149a3552e96291577e.r2.dev/MTInsta/MTInstagram_V26.apk" class="download-btn">
+          <i class="fas fa-download"></i>
+          <span data-lang="ar">تنزيل الآن</span>
+          <span data-lang="en">Download Now</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="install-notice">
+      <h4><i class="fas fa-info-circle"></i> <span data-lang="ar">ملاحظة هامة:</span><span data-lang="en">Important Note:</span></h4>
+      <p data-lang="ar">• يجب تفعيل "مصادر غير معروفة" في إعدادات الهاتف قبل التثبيت</p>
+      <p data-lang="en">• Enable "Unknown Sources" in phone settings before installation</p>
+      <p data-lang="ar">• النسخة متوافقة مع أندرويد 9.0 فما فوق ومعالج arm64</p>
+      <p data-lang="en">• Compatible with Android 9.0 and above, and supports ARM64 processors</p>
+    </div>
+  </section>
+
+  <section class="features-card glass">
+    <h2 class="section-title" data-lang="ar">الميزات الحصرية</h2>
+    <h2 class="section-title" data-lang="en">Exclusive Features</h2>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-download"></i></div>
+        <div class="feature-content">
+          <h3 class="feature-title" data-lang="ar">تنزيل الصور والفيديوهات</h3>
+          <h3 class="feature-title" data-lang="en">Download Photos & Videos</h3>
+          <p class="feature-desc" data-lang="ar">حفظ الصور والفيديوهات من المنشورات والقصص بجودة عالية</p>
+          <p class="feature-desc" data-lang="en">Save photos and videos from posts and stories in high quality</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-eye"></i></div>
+        <div class="feature-content">
+          <h3 class="feature-title" data-lang="ar">قصص دون معرفة</h3>
+          <h3 class="feature-title" data-lang="en">View Stories Anonymously</h3>
+          <p class="feature-desc" data-lang="ar">مشاهدة قصص الآخرين دون أن يعرفوا أنك شاهدتها</p>
+          <p class="feature-desc" data-lang="en">View others' stories without them knowing you watched</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-ad"></i></div>
+        <div class="feature-content">
+          <h3 class="feature-title" data-lang="ar">إزالة الإعلانات</h3>
+          <h3 class="feature-title" data-lang="en">Remove Ads</h3>
+          <p class="feature-desc" data-lang="ar">تصفح انستغرام بدون إعلانات مزعجة</p>
+          <p class="feature-desc" data-lang="en">Browse Instagram without annoying ads</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-copy"></i></div>
+        <div class="feature-content">
+          <h3 class="feature-title" data-lang="ar">نسخ النصوص</h3>
+          <h3 class="feature-title" data-lang="en">Copy Texts</h3>
+          <p class="feature-desc" data-lang="ar">نسخ نصوص التعليقات والوصف بسهولة</p>
+          <p class="feature-desc" data-lang="en">Easily copy texts from comments and descriptions</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-palette"></i></div>
+        <div class="feature-content">
+          <h3 class="feature-title" data-lang="ar">واجهة ذهبية</h3>
+          <h3 class="feature-title" data-lang="en">Golden Interface</h3>
+          <p class="feature-desc" data-lang="ar">واجهة ذهبية فاخرة مع تدرجات أنيقة</p>
+          <p class="feature-desc" data-lang="en">Luxurious golden interface with elegant gradients</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-magnifying-glass-plus"></i></div>
+        <div class="feature-content">
+          <h3 class="feature-title" data-lang="ar">تكبير الصور</h3>
+          <h3 class="feature-title" data-lang="en">Zoom Photos</h3>
+          <p class="feature-desc" data-lang="ar">تكبير الصور في المنشورات والقصص للرؤية الأفضل</p>
+          <p class="feature-desc" data-lang="en">Zoom photos in posts and stories for better viewing</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-features">
+      <h3 data-lang="ar">+15 ميزة أخرى</h3>
+      <h3 data-lang="en">+15 More Features</h3>
+      <div class="chips">
+        <span class="chip" data-lang="ar">تنزيل القصص</span>
+        <span class="chip" data-lang="ar">إخفاء النشاط</span>
+        <span class="chip" data-lang="ar">نسخ الروابط</span>
+        <span class="chip" data-lang="ar">حفظ الريلز</span>
+        <span class="chip" data-lang="en">Download Stories</span>
+        <span class="chip" data-lang="en">Hide Activity</span>
+        <span class="chip" data-lang="en">Copy Links</span>
+        <span class="chip" data-lang="en">Save Reels</span>
+      </div>
+    </div>
+  </section>
+</div>
+
+  </main>  <footer class="footer">
     <div class="footer-content">
       <div>
         <div class="footer-logo">
           <i class="fab fa-instagram"></i>
           <span data-lang="ar">انستقرام MT الذهبي</span>
           <span data-lang="en">MTInsta</span>
-        </div>
+        </div><p class="footer-desc" data-lang="ar">النسخة الذهبية المحسنة من تطبيق انستغرام مع واجهة فاخرة وميزات متقدمة. نسعى لتقديم أفضل تجربة مستخدم مع الحفاظ على الأمان والخصوصية.</p>
+    <p class="footer-desc" data-lang="en">The enhanced golden version of Instagram with a luxurious interface and advanced features. We strive to provide the best user experience while maintaining security and privacy.</p>
 
-        <p class="footer-desc" data-lang="ar">النسخة الذهبية المحسنة من تطبيق انستغرام مع واجهة فاخرة وميزات متقدمة. نسعى لتقديم أفضل تجربة مستخدم مع الحفاظ على الأمان والخصوصية.</p>
-        <p class="footer-desc" data-lang="en">The enhanced golden version of Instagram with a luxurious interface and advanced features. We strive to provide the best user experience while maintaining security and privacy.</p>
-
-        <div class="footer-links">
-          <a href="/privacy-policy.html"><i class="fas fa-shield-alt"></i> <span data-lang="ar">الأمان والخصوصية</span><span data-lang="en">Security & Privacy</span></a>
-          <a href="/faq.html"><i class="fas fa-question-circle"></i> <span data-lang="ar">الأسئلة الشائعة</span><span data-lang="en">FAQ</span></a>
-          <a href="/terms.html"><i class="fas fa-book"></i> <span data-lang="ar">الشروط والأحكام</span><span data-lang="en">Terms & Conditions</span></a>
-          <a href="/contact.html"><i class="fas fa-envelope"></i> <span data-lang="ar">اتصل بنا</span><span data-lang="en">Contact Us</span></a>
-        </div>
-      </div>
-
-      <div>
-        <h3 class="footer-section-title" data-lang="ar">روابط مفيدة</h3>
-        <h3 class="footer-section-title" data-lang="en">Useful Links</h3>
-
-        <div class="footer-links">
-          <a href="https://t.me/mtwhatsapp"><i class="fab fa-telegram"></i> <span data-lang="ar">قناة التليجرام</span><span data-lang="en">Telegram Channel</span></a>
-          <a href="/user-guide.html"><i class="fab fa-youtube"></i> <span data-lang="ar">دليل الاستخدام</span><span data-lang="en">User Guide</span></a>
-          <a href="https://www.mtaltawaf.com"><i class="fas fa-mobile-alt"></i> <span data-lang="ar">تطبيقات أخرى</span><span data-lang="en">Other Apps</span></a>
-        </div>
-      </div>
+    <div class="footer-links">
+      <a href="/privacy-policy.html"><i class="fas fa-shield-alt"></i> <span data-lang="ar">الأمان والخصوصية</span><span data-lang="en">Security & Privacy</span></a>
+      <a href="/faq.html"><i class="fas fa-question-circle"></i> <span data-lang="ar">الأسئلة الشائعة</span><span data-lang="en">FAQ</span></a>
+      <a href="/terms.html"><i class="fas fa-book"></i> <span data-lang="ar">الشروط والأحكام</span><span data-lang="en">Terms & Conditions</span></a>
+      <a href="/contact.html"><i class="fas fa-envelope"></i> <span data-lang="ar">اتصل بنا</span><span data-lang="en">Contact Us</span></a>
     </div>
+  </div>
 
-    <div class="copyright">
-      <p>&copy; 2026 MTInsta. <span data-lang="ar">جميع الحقوق محفوظة</span><span data-lang="en">All rights reserved</span></p>
+  <div>
+    <h3 class="footer-section-title" data-lang="ar">روابط مفيدة</h3>
+    <h3 class="footer-section-title" data-lang="en">Useful Links</h3>
+
+    <div class="footer-links">
+      <a href="https://t.me/mtwhatsapp"><i class="fab fa-telegram"></i> <span data-lang="ar">قناة التليجرام</span><span data-lang="en">Telegram Channel</span></a>
+      <a href="/user-guide.html"><i class="fab fa-youtube"></i> <span data-lang="ar">دليل الاستخدام</span><span data-lang="en">User Guide</span></a>
+      <a href="https://www.mtaltawaf.com"><i class="fas fa-mobile-alt"></i> <span data-lang="ar">تطبيقات أخرى</span><span data-lang="en">Other Apps</span></a>
     </div>
-  </footer>
+  </div>
+</div>
 
-  <script>
+<div class="copyright">
+  <p>&copy; 2026 MTInsta. <span data-lang="ar">جميع الحقوق محفوظة</span><span data-lang="en">All rights reserved</span></p>
+</div>
+
+  </footer>  <script>
     let lang = 'ar';
     let countdownStarted = false;
 
@@ -1000,6 +1006,5 @@
         }
       }, 1000);
     }
-  </script>
-</body>
+  </script></body>
 </html>
