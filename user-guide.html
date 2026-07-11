@@ -4,24 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <title>الشروط والأحكام - انستقرام MT الذهبي</title>
+  <title>دليل الاستخدام - انستقرام MT الذهبي</title>
   <link rel="icon" href="https://instagold.download/favicon.ico" type="image/x-icon" />
 
   <meta name="robots" content="index,follow" />
-  <meta name="description" content="الشروط والأحكام التي تحكم استخدام موقع وتطبيق انستقرام MT الذهبي." />
-  <meta name="keywords" content="MTInstagram, انستقرام MT الذهبي, الشروط والأحكام, Terms and Conditions, مسؤولية المستخدم" />
+  <meta name="description" content="دليل شامل لاستخدام انستقرام MT الذهبي، وتفعيل ميزات الخصوصية وتنزيل المحتوى وتخصيص الواجهة." />
+  <meta name="keywords" content="MTInstagram, انستقرام MT الذهبي, دليل الاستخدام, شرح, User Guide" />
   <meta name="theme-color" content="#833AB4" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="MTInstagram" />
   <meta property="og:locale" content="ar_AR" />
-  <meta property="og:title" content="الشروط والأحكام - انستقرام MT الذهبي" />
-  <meta property="og:description" content="اقرأ الشروط والأحكام التي تنظم استخدام موقع وتطبيق انستقرام MT الذهبي." />
+  <meta property="og:title" content="دليل الاستخدام - انستقرام MT الذهبي" />
+  <meta property="og:description" content="دليلك الكامل لاستخدام ميزات انستقرام MT الذهبي." />
   <meta property="og:image" content="instaplus.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="الشروط والأحكام - انستقرام MT الذهبي" />
-  <meta name="twitter:description" content="اقرأ الشروط والأحكام التي تنظم استخدام موقع وتطبيق انستقرام MT الذهبي." />
+  <meta name="twitter:title" content="دليل الاستخدام - انستقرام MT الذهبي" />
+  <meta name="twitter:description" content="دليلك الكامل لاستخدام ميزات انستقرام MT الذهبي." />
   <meta name="twitter:image" content="instaplus.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -111,7 +111,7 @@
     }
 
     .top-bar,
-    .terms-card {
+    .guide-card {
       backdrop-filter: blur(10px) saturate(135%);
       -webkit-backdrop-filter: blur(10px) saturate(135%);
     }
@@ -157,10 +157,6 @@
     }
 
     .btn-control {
-      width: auto;
-      height: auto;
-      min-width: 0;
-      min-height: 0;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -172,7 +168,6 @@
       cursor: pointer;
       font-size: 14px;
       font-weight: 900;
-      line-height: 1.2;
       background: rgba(255,255,255,.16);
       transition: transform var(--fast), background var(--fast);
     }
@@ -253,21 +248,25 @@
     .main-content {
       position: relative;
       z-index: 5;
-      width: min(1000px, calc(100% - 30px));
+      width: min(1100px, calc(100% - 30px));
       margin: -56px auto 0;
     }
 
-    .terms-card {
+    .guide-card {
       position: relative;
       overflow: hidden;
-      padding: clamp(22px, 4vw, 38px);
+      padding: clamp(22px, 4vw, 36px);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       background: var(--glass);
       box-shadow: var(--shadow);
     }
 
-    .terms-card::before {
+    .guide-card + .guide-card {
+      margin-top: 22px;
+    }
+
+    .guide-card::before {
       content: "";
       position: absolute;
       inset: 0 0 auto;
@@ -275,42 +274,82 @@
       background: linear-gradient(90deg, transparent, rgba(255,255,255,.94), transparent);
     }
 
-    .intro-box {
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 24px;
-      padding: 20px;
-      border: 1px solid rgba(253,184,39,.23);
-      border-radius: 22px;
-      background: rgba(255,249,230,.82);
+    .section-header {
+      text-align: center;
+      margin-bottom: 26px;
     }
 
-    .intro-box::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -80%;
-      width: 48%;
-      height: 100%;
-      pointer-events: none;
-      transform: skewX(-25deg);
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent);
-      animation: shine 4s ease-in-out infinite;
+    .section-icon {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 12px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-size: 23px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--gold-2), var(--gold), var(--pink));
+      box-shadow: 0 12px 25px rgba(245,133,41,.25);
     }
 
-    .intro-title {
+    .section-title {
       position: relative;
-      z-index: 2;
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      margin-bottom: 9px;
-      color: var(--purple);
-      font-size: 21px;
+      margin-bottom: 10px;
+      padding-bottom: 12px;
+      text-align: center;
+      font-size: 25px;
       font-weight: 900;
     }
 
-    .intro-icon {
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 76px;
+      height: 4px;
+      border-radius: 99px;
+      transform: translateX(-50%);
+      background: linear-gradient(90deg, var(--purple), var(--pink), var(--gold));
+    }
+
+    .section-desc {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .guide-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .guide-item {
+      position: relative;
+      overflow: hidden;
+      padding: 20px;
+      border: 1px solid rgba(253,184,39,.22);
+      border-radius: 22px;
+      background: rgba(255,249,230,.82);
+      transition: transform var(--fast), box-shadow var(--fast), background var(--fast);
+    }
+
+    .guide-item:hover {
+      transform: translateY(-2px);
+      background: rgba(255,244,214,.96);
+      box-shadow: 0 14px 32px rgba(56,24,74,.11);
+    }
+
+    .item-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      color: var(--purple);
+      font-size: 19px;
+      font-weight: 900;
+    }
+
+    .item-title-icon {
       width: 44px;
       height: 44px;
       min-width: 44px;
@@ -318,129 +357,119 @@
       place-items: center;
       color: #fff;
       border-radius: 14px;
-      background: linear-gradient(135deg, var(--gold-2), var(--gold), var(--pink));
-      box-shadow: 0 9px 20px rgba(245,133,41,.24);
-    }
-
-    .intro-box p {
-      position: relative;
-      z-index: 2;
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .term-section {
-      position: relative;
-      padding: 22px 0;
-      border-bottom: 1px solid rgba(131,58,180,.10);
-    }
-
-    .term-section:last-of-type {
-      border-bottom: 0;
-    }
-
-    .term-heading {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-      color: var(--purple);
-      font-size: 20px;
-      font-weight: 900;
-    }
-
-    .term-number {
-      width: 42px;
-      height: 42px;
-      min-width: 42px;
-      display: grid;
-      place-items: center;
-      color: #fff;
-      border-radius: 14px;
       background: linear-gradient(135deg, var(--purple), var(--pink));
       box-shadow: 0 8px 18px rgba(131,58,180,.18);
-      font-size: 14px;
-      font-weight: 900;
     }
 
-    .term-section p {
-      margin-bottom: 12px;
+    .item-content {
       color: var(--muted);
       font-size: 15px;
     }
 
-    .term-section p:last-child {
+    .item-content p {
+      margin-bottom: 12px;
+    }
+
+    .item-content p:last-child {
       margin-bottom: 0;
     }
 
-    .term-list {
+    .step-list {
       display: grid;
       gap: 10px;
-      margin: 14px 0;
+      margin-top: 14px;
       list-style: none;
+      counter-reset: guide-step;
     }
 
-    .term-list li {
+    .step-list li {
       position: relative;
-      padding: 13px 46px 13px 15px;
-      color: var(--muted);
-      border: 1px solid rgba(253,184,39,.20);
+      padding: 13px 50px 13px 15px;
+      border: 1px solid rgba(131,58,180,.10);
       border-radius: 16px;
-      background: rgba(255,249,230,.62);
-      font-size: 14px;
+      background: rgba(255,255,255,.62);
+      counter-increment: guide-step;
     }
 
-    html[dir="ltr"] .term-list li {
-      padding: 13px 15px 13px 46px;
+    html[dir="ltr"] .step-list li {
+      padding: 13px 15px 13px 50px;
     }
 
-    .term-list li::before {
-      content: "\f00d";
+    .step-list li::before {
+      content: counter(guide-step);
       position: absolute;
       top: 50%;
-      right: 15px;
-      width: 24px;
-      height: 24px;
+      right: 14px;
+      width: 27px;
+      height: 27px;
       display: grid;
       place-items: center;
       color: #fff;
-      border-radius: 8px;
+      border-radius: 9px;
       transform: translateY(-50%);
-      background: linear-gradient(135deg, var(--purple), var(--pink));
-      font-family: "Font Awesome 6 Free";
-      font-size: 11px;
+      background: linear-gradient(135deg, var(--gold-2), var(--pink));
+      font-size: 12px;
       font-weight: 900;
     }
 
-    html[dir="ltr"] .term-list li::before {
+    html[dir="ltr"] .step-list li::before {
       right: auto;
-      left: 15px;
+      left: 14px;
     }
 
-    .term-section strong {
+    .item-content strong {
       color: var(--text);
       font-weight: 900;
     }
 
-    .notice-box {
-      margin-top: 14px;
-      padding: 18px;
-      border: 1px solid rgba(131,58,180,.14);
-      border-radius: 20px;
-      background: rgba(255,255,255,.54);
+    .important-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 17px;
+      border: 1px solid rgba(225,48,108,.22);
+      border-radius: 18px;
       color: var(--muted);
+      background: rgba(255,240,247,.70);
+    }
+
+    .note-icon {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      border-radius: 13px;
+      background: linear-gradient(135deg, var(--gold-2), var(--pink));
+      box-shadow: 0 8px 18px rgba(225,48,108,.18);
+    }
+
+    .important-note p {
+      margin: 0;
       font-size: 14px;
     }
 
-    .notice-box i {
-      margin-inline-end: 7px;
-      color: var(--pink);
+    .help-box {
+      margin-top: 22px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid rgba(131,58,180,.14);
+      border-radius: 22px;
+      background: rgba(255,255,255,.56);
     }
 
+    .help-box h3 {
+      margin-bottom: 6px;
+      color: var(--purple);
+      font-size: 18px;
+      font-weight: 900;
+    }
 
-    .contact-box {
-      margin-top: 14px;
-      text-align: center;
+    .help-box p {
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 14px;
     }
 
     .contact-btn {
@@ -476,24 +505,6 @@
     .contact-btn:hover {
       transform: translateY(-3px);
       box-shadow: var(--shadow-hover);
-    }
-
-    .update-date {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 26px;
-      padding: 13px;
-      color: var(--muted);
-      border-radius: 16px;
-      background: rgba(131,58,180,.07);
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .update-date i {
-      color: var(--pink);
     }
 
     .footer {
@@ -624,10 +635,10 @@
       }
 
       .main-content {
-        width: min(100% - 22px, 1000px);
+        width: min(100% - 22px, 1100px);
       }
 
-      .terms-card {
+      .guide-card {
         padding: 21px 15px;
         border-radius: 24px;
       }
@@ -638,12 +649,11 @@
         border-radius: 20px;
       }
 
-      .term-heading {
-        font-size: 18px;
+      .item-title {
+        font-size: 17px;
       }
 
-      .term-section p,
-      .intro-box p {
+      .item-content {
         font-size: 14px;
       }
     }
@@ -679,262 +689,275 @@
   <header class="hero">
     <div class="hero-content">
       <div class="hero-icon">
-        <i class="fas fa-scale-balanced"></i>
+        <i class="fas fa-book-open"></i>
       </div>
 
-      <h1 data-lang="ar">الشروط والأحكام</h1>
-      <h1 data-lang="en">Terms & Conditions</h1>
+      <h1 data-lang="ar">دليل الاستخدام</h1>
+      <h1 data-lang="en">User Guide</h1>
 
       <p class="hero-subtitle" data-lang="ar">
-        يرجى قراءة هذه الشروط بعناية قبل استخدام موقع أو تطبيق انستقرام MT الذهبي.
+        دليلك الشامل للتعرف على أهم ميزات انستقرام MT الذهبي وطريقة استخدامها بصورة صحيحة.
       </p>
 
       <p class="hero-subtitle" data-lang="en">
-        Please read these terms carefully before using the MTInstagram Gold website or app.
+        Your complete guide to the main MTInstagram Gold features and how to use them correctly.
       </p>
     </div>
   </header>
 
   <main class="main-content">
-    <section class="terms-card">
+    <section class="guide-card">
+      <div class="section-header">
+        <div class="section-icon">
+          <i class="fas fa-sliders"></i>
+        </div>
 
-      <div class="terms-content" data-lang="ar">
-        <div class="intro-box">
-          <div class="intro-title">
-            <span class="intro-icon"><i class="fas fa-file-contract"></i></span>
-            <span>مقدمة</span>
+        <h2 class="section-title" data-lang="ar">الميزات الأساسية</h2>
+        <h2 class="section-title" data-lang="en">Main Features</h2>
+
+        <p class="section-desc" data-lang="ar">شرح مبسط لأهم الأدوات والخيارات داخل التطبيق.</p>
+        <p class="section-desc" data-lang="en">A simple explanation of the main tools and options in the app.</p>
+      </div>
+
+      <div class="guide-list">
+        <article class="guide-item">
+          <h3 class="item-title">
+            <span class="item-title-icon"><i class="fas fa-download"></i></span>
+            <span data-lang="ar">تنزيل المحتوى</span>
+            <span data-lang="en">Content Download</span>
+          </h3>
+
+          <div class="item-content" data-lang="ar">
+            <p>
+              تتيح لك هذه الميزة تنزيل الصور والفيديوهات والريلز والقصص مباشرة إلى هاتفك، دون الحاجة إلى تطبيقات خارجية.
+            </p>
+
+            <ol class="step-list">
+              <li>افتح الصورة أو الفيديو أو الريلز الذي تريد تنزيله.</li>
+              <li>اضغط على قائمة الخيارات أو زر التنزيل الظاهر داخل المنشور.</li>
+              <li>اختر التنزيل، ثم انتظر حتى يتم حفظ الملف في معرض الصور.</li>
+            </ol>
           </div>
 
-          <p>
-            مرحباً بك في موقع وتطبيق انستقرام MT الذهبي. باستخدامك لهذا الموقع أو التطبيق، فإنك توافق على الالتزام بهذه الشروط والأحكام. إذا كنت لا توافق على هذه الشروط، يرجى عدم استخدام الموقع أو التطبيق.
+          <div class="item-content" data-lang="en">
+            <p>
+              This feature lets you download photos, videos, reels and stories directly to your phone without external apps.
+            </p>
+
+            <ol class="step-list">
+              <li>Open the photo, video or reel you want to download.</li>
+              <li>Tap the options menu or the download button shown in the post.</li>
+              <li>Select download and wait for the file to be saved to your gallery.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="guide-item">
+          <h3 class="item-title">
+            <span class="item-title-icon"><i class="fas fa-palette"></i></span>
+            <span data-lang="ar">تخصيص الواجهة</span>
+            <span data-lang="en">Interface Customization</span>
+          </h3>
+
+          <div class="item-content" data-lang="ar">
+            <p>
+              يمكنك تغيير ألوان التطبيق والخطوط والأيقونات واختيار مظهر يناسب ذوقك.
+            </p>
+
+            <ol class="step-list">
+              <li>انتقل إلى <strong>إعدادات انستقرام MT الذهبي</strong>.</li>
+              <li>اختر <strong>الثيمات</strong> أو <strong>تخصيص الواجهة</strong>.</li>
+              <li>حدد اللون أو الثيم المطلوب، ثم احفظ التغييرات.</li>
+            </ol>
+          </div>
+
+          <div class="item-content" data-lang="en">
+            <p>
+              You can change app colors, fonts and icons and select an appearance that suits your style.
+            </p>
+
+            <ol class="step-list">
+              <li>Open <strong>MTInstagram Settings</strong>.</li>
+              <li>Select <strong>Themes</strong> or <strong>Interface Customization</strong>.</li>
+              <li>Choose the desired color or theme, then save your changes.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="guide-item">
+          <h3 class="item-title">
+            <span class="item-title-icon"><i class="fas fa-user-secret"></i></span>
+            <span data-lang="ar">إخفاء قراءة الرسائل</span>
+            <span data-lang="en">Hide Read Receipts</span>
+          </h3>
+
+          <div class="item-content" data-lang="ar">
+            <p>
+              تساعدك هذه الميزة على قراءة رسائل الدايركت دون إظهار أنك قرأتها للطرف الآخر.
+            </p>
+
+            <ol class="step-list">
+              <li>افتح <strong>إعدادات انستقرام MT الذهبي</strong>.</li>
+              <li>انتقل إلى <strong>الخصوصية والأمان</strong>.</li>
+              <li>فعّل خيار <strong>إخفاء قراءة الرسائل</strong>.</li>
+            </ol>
+          </div>
+
+          <div class="item-content" data-lang="en">
+            <p>
+              This feature lets you read direct messages without showing the sender that you have seen them.
+            </p>
+
+            <ol class="step-list">
+              <li>Open <strong>MTInstagram Settings</strong>.</li>
+              <li>Go to <strong>Privacy and Security</strong>.</li>
+              <li>Enable <strong>Hide Read Receipts</strong>.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="guide-item">
+          <h3 class="item-title">
+            <span class="item-title-icon"><i class="fas fa-eye-slash"></i></span>
+            <span data-lang="ar">مشاهدة القصص دون معرفة صاحبها</span>
+            <span data-lang="en">View Stories Anonymously</span>
+          </h3>
+
+          <div class="item-content" data-lang="ar">
+            <p>
+              تتيح لك هذه الميزة مشاهدة القصص دون ظهور اسمك ضمن قائمة المشاهدين.
+            </p>
+
+            <ol class="step-list">
+              <li>افتح إعدادات التطبيق.</li>
+              <li>انتقل إلى قسم <strong>الخصوصية</strong>.</li>
+              <li>فعّل خيار <strong>مشاهدة القصص دون معرفة</strong>.</li>
+            </ol>
+          </div>
+
+          <div class="item-content" data-lang="en">
+            <p>
+              This feature lets you view stories without your name appearing in the viewer list.
+            </p>
+
+            <ol class="step-list">
+              <li>Open the app settings.</li>
+              <li>Go to the <strong>Privacy</strong> section.</li>
+              <li>Enable <strong>View Stories Anonymously</strong>.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="guide-item">
+          <h3 class="item-title">
+            <span class="item-title-icon"><i class="fas fa-copy"></i></span>
+            <span data-lang="ar">نسخ النصوص والروابط</span>
+            <span data-lang="en">Copy Text and Links</span>
+          </h3>
+
+          <div class="item-content" data-lang="ar">
+            <p>
+              يمكنك نسخ وصف المنشورات والتعليقات والروابط بسهولة من داخل التطبيق.
+            </p>
+
+            <ol class="step-list">
+              <li>اضغط مطولاً على النص أو افتح قائمة خيارات المنشور.</li>
+              <li>اختر <strong>نسخ النص</strong> أو <strong>نسخ الرابط</strong>.</li>
+              <li>الصق المحتوى في المكان الذي تريده.</li>
+            </ol>
+          </div>
+
+          <div class="item-content" data-lang="en">
+            <p>
+              You can easily copy post captions, comments and links from inside the app.
+            </p>
+
+            <ol class="step-list">
+              <li>Long-press the text or open the post options menu.</li>
+              <li>Select <strong>Copy Text</strong> or <strong>Copy Link</strong>.</li>
+              <li>Paste the content wherever you need it.</li>
+            </ol>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-card">
+      <div class="section-header">
+        <div class="section-icon">
+          <i class="fas fa-circle-info"></i>
+        </div>
+
+        <h2 class="section-title" data-lang="ar">نصائح مهمة</h2>
+        <h2 class="section-title" data-lang="en">Important Tips</h2>
+
+        <p class="section-desc" data-lang="ar">إرشادات تساعدك على استخدام التطبيق بصورة أفضل.</p>
+        <p class="section-desc" data-lang="en">Guidance to help you use the app more effectively.</p>
+      </div>
+
+      <div class="guide-list">
+        <div class="important-note">
+          <span class="note-icon"><i class="fas fa-rotate"></i></span>
+
+          <p data-lang="ar">
+            <strong>تحديثات التطبيق:</strong> احرص دائماً على تنزيل أحدث إصدار من الموقع الرسمي للحصول على إصلاحات المشكلات والميزات الجديدة.
+          </p>
+
+          <p data-lang="en">
+            <strong>App Updates:</strong> Always download the latest version from the official website to receive fixes and new features.
           </p>
         </div>
 
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">01</span>
-            قبول الشروط
-          </h2>
+        <div class="important-note">
+          <span class="note-icon"><i class="fas fa-shield-halved"></i></span>
 
-          <p>
-            تُعتبر هذه الشروط عقداً ملزماً بينك وبين فريق تطوير انستقرام MT الذهبي. باستخدامك للخدمة، فإنك تؤكد أنك قرأت وفهمت ووافقت على هذه الشروط كاملة.
-          </p>
-        </article>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">02</span>
-            الترخيص الممنوح
-          </h2>
-
-          <p>
-            نمنحك ترخيصاً محدوداً وغير حصري وقابلاً للإلغاء وغير قابل للتحويل لاستخدام التطبيق على جهازك المحمول، وذلك وفقاً لهذه الشروط.
+          <p data-lang="ar">
+            <strong>الأمان:</strong> لا تقم بتنزيل التطبيق من روابط مجهولة، ولا تشارك كلمة المرور أو رمز التحقق مع أي شخص.
           </p>
 
-          <ul class="term-list">
-            <li>توزيع أو نسخ أو بيع التطبيق أو أي جزء منه.</li>
-            <li>تعديل التطبيق أو إنشاء أعمال مشتقة منه.</li>
-            <li>فك التشفير أو محاولة استخراج الشفرة المصدرية الخاصة بالتطبيق.</li>
-          </ul>
-        </article>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">03</span>
-            حقوق الملكية الفكرية
-          </h2>
-
-          <p>
-            جميع حقوق الملكية الفكرية المتعلقة بالموقع والتطبيق، بما في ذلك التصميم والمحتوى والعلامات والشعارات، محفوظة لأصحابها. لا يجوز استخدامها أو نسخها دون إذن كتابي مسبق.
+          <p data-lang="en">
+            <strong>Security:</strong> Do not download the app from unknown links, and never share your password or verification code.
           </p>
-        </article>
+        </div>
 
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">04</span>
-            حدود المسؤولية
-          </h2>
+        <div class="important-note">
+          <span class="note-icon"><i class="fas fa-hard-drive"></i></span>
 
-          <p>
-            يتم توفير التطبيق «كما هو» و«حسب توفره» دون أي ضمانات من أي نوع. لا يضمن فريق انستقرام MT الذهبي أن التطبيق سيكون خالياً من الأخطاء أو آمناً بصورة مطلقة، ولا يتحمل مسؤولية أي أضرار مباشرة أو غير مباشرة ناتجة عن استخدامه.
+          <p data-lang="ar">
+            <strong>مساحة التخزين:</strong> تأكد من وجود مساحة كافية قبل تنزيل الملفات أو تثبيت تحديث جديد.
           </p>
-        </article>
 
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">05</span>
-            إنهاء الخدمة
-          </h2>
-
-          <p>
-            يحق لنا، وفقاً لتقديرنا، إنهاء أو تعليق الوصول إلى التطبيق أو الموقع في أي وقت ودون إشعار مسبق، لأي سبب، بما في ذلك مخالفة هذه الشروط.
+          <p data-lang="en">
+            <strong>Storage:</strong> Make sure enough storage space is available before downloading files or installing an update.
           </p>
-        </article>
+        </div>
 
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">06</span>
-            التغييرات على الشروط
-          </h2>
+        <div class="important-note">
+          <span class="note-icon"><i class="fas fa-mobile-screen"></i></span>
 
-          <p>
-            نحتفظ بالحق في تعديل هذه الشروط في أي وقت. سيتم نشر التغييرات على هذه الصفحة، ويعتبر استمرار استخدامك للموقع أو التطبيق بعد نشرها موافقة على الشروط المعدلة.
+          <p data-lang="ar">
+            <strong>التوافق:</strong> النسخة مخصصة لأندرويد 9 أو أحدث، وتتطلب جهازاً بمعالج ARM64.
           </p>
-        </article>
 
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">07</span>
-            القانون الحاكم
-          </h2>
-
-          <p>
-            تخضع هذه الشروط وتُفسر وفقاً للقوانين المعمول بها في الجمهورية اليمنية. وأي نزاع ينشأ عنها يُعرض على الجهات المختصة وفقاً للقانون.
+          <p data-lang="en">
+            <strong>Compatibility:</strong> The version is intended for Android 9 or newer and requires an ARM64 device.
           </p>
-        </article>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number"><i class="fas fa-envelope"></i></span>
-            التواصل معنا
-          </h2>
-
-          <div class="contact-box">
-            <p>لأي سؤال أو ملاحظة تتعلق بسياسة الخصوصية، يمكنك التواصل معنا من خلال صفحة اتصل بنا.</p>
-
-          <div class="contact-box">
-            <a href="/contact.html" class="contact-btn">
-              <i class="fas fa-paper-plane"></i>
-              اتصل بنا
-            </a>
-          </div>
-        </article>
-
-        <div class="update-date">
-          <i class="fas fa-calendar-check"></i>
-          <span><strong>آخر تحديث:</strong> 8 أغسطس 2025</span>
         </div>
       </div>
 
+      <div class="help-box">
+        <h3 data-lang="ar">هل تحتاج إلى مساعدة إضافية؟</h3>
+        <h3 data-lang="en">Need More Help?</h3>
 
-      <div class="terms-content" data-lang="en">
-        <div class="intro-box">
-          <div class="intro-title">
-            <span class="intro-icon"><i class="fas fa-file-contract"></i></span>
-            <span>Introduction</span>
-          </div>
+        <p data-lang="ar">استخدم صفحة اتصل بنا وأرسل تفاصيل المشكلة وإصدار التطبيق ونوع جهازك.</p>
+        <p data-lang="en">Use the Contact page and include the issue details, app version and device model.</p>
 
-          <p>
-            Welcome to the MTInstagram Gold website and app. By using this website or app, you agree to comply with these Terms and Conditions. If you do not agree, please do not use the website or app.
-          </p>
-        </div>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">01</span>
-            Acceptance of Terms
-          </h2>
-
-          <p>
-            These terms form a binding agreement between you and the MTInstagram Gold development team. By using the service, you confirm that you have read, understood and agreed to all of these terms.
-          </p>
-        </article>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">02</span>
-            License Granted
-          </h2>
-
-          <p>
-            We grant you a limited, non-exclusive, revocable and non-transferable license to use the app on your mobile device in accordance with these terms.
-          </p>
-
-          <ul class="term-list">
-            <li>Distribute, copy or sell the app or any part of it.</li>
-            <li>Modify the app or create derivative works from it.</li>
-            <li>Decrypt or attempt to extract the app source code.</li>
-          </ul>
-        </article>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">03</span>
-            Intellectual Property Rights
-          </h2>
-
-          <p>
-            All intellectual property rights related to the website and app, including design, content, trademarks and logos, remain with their respective owners. They may not be used or copied without prior written permission.
-          </p>
-        </article>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">04</span>
-            Limitation of Liability
-          </h2>
-
-          <p>
-            The app is provided “as is” and “as available” without warranties of any kind. The MTInstagram Gold team does not guarantee that the app will be error-free or completely secure and is not liable for direct or indirect damages arising from its use.
-          </p>
-        </article>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">05</span>
-            Termination of Service
-          </h2>
-
-          <p>
-            We may terminate or suspend access to the app or website at any time and without prior notice for any reason, including violation of these terms.
-          </p>
-        </article>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">06</span>
-            Changes to the Terms
-          </h2>
-
-          <p>
-            We reserve the right to modify these terms at any time. Changes will be posted on this page, and continued use of the website or app after publication means you accept the revised terms.
-          </p>
-        </article>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number">07</span>
-            Governing Law
-          </h2>
-
-          <p>
-            These terms are governed by and interpreted in accordance with the applicable laws of the Republic of Yemen. Any dispute will be referred to the competent authorities under the law.
-          </p>
-        </article>
-
-        <article class="term-section">
-          <h2 class="term-heading">
-            <span class="term-number"><i class="fas fa-envelope"></i></span>
-            Contact Us
-          </h2>
-
-          <div class="contact-box">
-            <p>For questions or feedback about this Privacy Policy, contact us through the Contact page.</p>
-
-          <div class="contact-box">
-            <a href="/contact.html" class="contact-btn">
-              <i class="fas fa-paper-plane"></i>
-              Contact Us
-            </a>
-          </div>
-        </article>
-
-        <div class="update-date">
-          <i class="fas fa-calendar-check"></i>
-          <span><strong>Last updated:</strong> August 8, 2025</span>
-        </div>
+        <a href="/contact.html" class="contact-btn">
+          <i class="fas fa-paper-plane"></i>
+          <span data-lang="ar">اتصل بنا</span>
+          <span data-lang="en">Contact Us</span>
+        </a>
       </div>
-
     </section>
   </main>
 
